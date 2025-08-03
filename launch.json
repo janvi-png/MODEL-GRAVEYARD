@@ -1,0 +1,50 @@
+{
+    "configurations": [
+        {
+            "command": "npm start",
+            "name": "Run npm start",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "type": "java",
+            "request": "attach",
+            "name": "Java",
+            "port": 5005,
+            "sourceRoots": []
+        },
+    
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "model_graveyard_java_35d51a60"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch",
+            "program": "$<program>",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Yeoman generator",
+            "program": "${workspaceFolder}/node_modules/yo/lib/cli.js",
+            "args": [
+                "generator"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}
